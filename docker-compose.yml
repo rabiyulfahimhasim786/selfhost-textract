@@ -1,0 +1,10 @@
+ version: '3.8'
+ services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./example_invoices:/data/example_invoices
+    environment:
+      - LOG_LEVEL=info
